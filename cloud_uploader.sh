@@ -35,6 +35,12 @@ if [ -z "$filename_or_path" ]; then
     usage
 fi
 
+#check if the file exists
+if [ ! -f "$filename_or_path" ]; then
+    echo "Error: File '$filename_or_path' does not exist"
+    exit 1
+fi
+
 #prompt the user for the connection string
 read -p "Enter the connection string for your Azure Storage account: " connection_string
 
