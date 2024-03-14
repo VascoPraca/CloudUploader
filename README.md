@@ -21,3 +21,13 @@ Enter the connection string for your Azure Storage account:
 
 -----------------------------------------------------------------
 If everything is correct the file should be uploaded sucessfully to the intended storage.
+
+
+
+### To do:
+    - Allow multiple file uploads at once.
+    - Add a progress bar or percentage upload completion using tools like pv.
+    - Provide an option to generate and display a shareable link post-upload.
+    - Enable file synchronization -- if the file already exists in the cloud, prompt the user to overwrite, skip, or rename.
+    - Integrate encryption for added security before the upload.
+    - Package the script for easy distribution and installation.
